@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drip Burger</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --azul: #3D5AFE;
+  --rosa: #FF8EDB;
+  --crema: #F6F3EE;
+  --texto: #1E1E1E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--crema);
+  color: var(--texto);
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, var(--azul), #5C6CFF);
+  color: white;
+  text-align: center;
+  padding: 80px 20px 60px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  margin-top: 15px;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+.badge {
+  background: var(--rosa);
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+/* MENÚ */
+.menu {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 25px;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+
+.precio {
+  font-weight: 700;
+  color: var(--azul);
+  font-size: 1.2rem;
+}
+
+.boton {
+  display: inline-block;
+  margin-top: 15px;
+  background: var(--rosa);
+  color: white;
+  padding: 10px 22px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.boton:hover {
+  background: var(--azul);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* RESPONSIVE */
+@media(min-width:768px){
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+  <h1>DRIP BURGER</h1>
+  <p>Smash burgers con flow 🍔✨</p>
+  <div class="badge">#BurgerAesthetic</div>
+</section>
+
+<section class="menu">
+  <div class="menu-title">Nuestro Menú</div>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="">
+      <div class="card-content">
+        <h3>Drip Classic</h3>
+        <p>Carne smash, cheddar derretido y salsa secreta.</p>
+        <div class="precio">$120 MXN</div>
+        <a href="#" class="boton">Ordenar</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="">
+      <div class="card-content">
+        <h3>Doble Flow</h3>
+        <p>Doble carne, doble queso, puro poder.</p>
+        <div class="precio">$160 MXN</div>
+        <a href="#" class="boton">Ordenar</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086" alt="">
+      <div class="card-content">
+        <h3>BBQ Vibes</h3>
+        <p>BBQ ahumada + aros crujientes + queso gouda.</p>
+        <div class="precio">$150 MXN</div>
+        <a href="#" class="boton">Ordenar</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  📍 Ciudad de México  
+  📲 WhatsApp: 55 1234 5678  
+  © 2026 Drip Burger
+</footer>
+
+</body>
+</html>
